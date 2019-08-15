@@ -1,0 +1,27 @@
+.drawerToggle {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.drawerToggle div {
+    width: 90%;
+    height: 3px;
+    background-color: white;
+    background: linear-gradient(to right, deepskyblue, #9c6164);
+    transform: translate(0,200%);
+
+}
+
+
+@media (min-width: 1100px) {
+    .drawerToggle {
+        display: none;
+    }
+}

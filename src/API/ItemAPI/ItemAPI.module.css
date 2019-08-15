@@ -1,0 +1,8 @@
+.blah { background: #61dafb;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.05), rgba(255,255,255,.1));
+    list-style: none;
+    margin-bottom: 3px;}
+.blah:nth-child(odd) {
+    background: #ff005b;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.05), rgba(255,255,255,.1));
+}

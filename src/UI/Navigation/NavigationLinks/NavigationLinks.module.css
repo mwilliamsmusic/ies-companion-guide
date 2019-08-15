@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+.navigationLinks {
+    margin-left: 0px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    /*font-family: 'Staatliches', cursive;*/
+    font-family: 'Righteous', cursive;
+   /* font-family: 'Play', sans-serif;*/
+    border-bottom: 2px solid black;
+    font-size: 1.6rem;
+    text-shadow: 2px 2px #9c6164;
+    padding: 5px;
+}
+
+.navigationLinks a {
+    color: deepskyblue;
+    text-decoration: none;
+    width: 100%;
+
+
+    box-sizing: border-box;
+    display: block;
+}
+
+.navigationLinks a:hover,
+.navigationLinks a:active,
+.navigationLinks a.active {
+    color: black;
+}
+
+
+@media (min-width: 1100px) {
+
+    .navigationLinks {
+        margin: 0;
+        display: flex;
+        height: 100%;
+        width: auto;
+        align-items: center;
+       padding: 0;
+    }
+
+    .navigationLinks a {
+        color: whitesmoke;
+        height: 100%;
+        padding: 16px 10px;
+        border-bottom: 4px solid transparent;
+
+    }
+
+    .navigationLinks a:hover,
+    .navigationLinks a:active,
+    .navigationLinks a.active {
+        background-color: whitesmoke;
+        background-image: linear-gradient(  rgba(8,8,8,.0)70%, rgba(8,8,8,.3));
+        border-bottom: 4px solid deepskyblue;
+        color: black;
+        border-radius: 2px;
+    }
+
+}

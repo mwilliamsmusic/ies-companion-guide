@@ -1,0 +1,13 @@
+.blah{
+    color: red;
+    grid-area: largeLogo;
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+            ". largeLogo largeLogo ."
+            ". links links .";
+}
+

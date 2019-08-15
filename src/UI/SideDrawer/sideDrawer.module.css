@@ -1,0 +1,39 @@
+.sideDrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: whitesmoke;
+    /*padding: 32px 16px;*/
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+    background-image: linear-gradient(rgba(8,8,8,.0)45%, rgba(8,8,8,.3) );
+    border-right-style: solid;
+    border-right-color: deepskyblue;
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.close {
+    transform: translateX(-100%);
+}
+
+.centerLogo {
+transform: translate(-3%,25%);
+height:270px;
+    width:270px;
+}
+
+@media (min-width: 1100px) {
+    .sideDrawer {
+        display: none;
+    }
+
+.image { transform: translateX(-100%);}
+
+}
