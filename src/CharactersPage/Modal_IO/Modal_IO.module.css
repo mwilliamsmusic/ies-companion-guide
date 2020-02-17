@@ -1,0 +1,121 @@
+
+
+.largeGridContainer {
+    display: none;
+
+
+}
+
+.smallGridContainer {
+     display: grid;
+     width: 100%;
+     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+     grid-template-rows: auto;
+     grid-template-areas: " . . small small small small small small . .";
+
+ }
+
+.smallLayoutContainer {
+    grid-area: small;
+}
+
+
+.largeLayoutContainer {
+    display: block;
+}
+
+
+
+
+
+@media (min-width: 1041px) {
+
+
+
+    .blueBoxGridContainer {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        grid-template-rows: auto;
+        grid-template-areas: "pic pic pic .   class class . class2 class2 . .";
+        box-sizing:border-box;
+        justify-items: center;
+        align-items: center;
+    }
+.blueContainerPic {
+    grid-area: pic;
+   /* background-image: url("../../IMG/CharacterBust/IanBust/ianBust.png");
+    background-position: center;
+    background-repeat: no-repeat;  */
+max-height: 95%;
+    max-width: 95%;
+
+
+}
+    .blueContainerClass {
+         grid-area: class;
+
+
+
+     }
+
+    .blueContainerClass2 {
+        grid-area: class2;
+
+
+    }
+
+.smallGridContainer {
+    display: none;
+}
+
+    .largeGridContainer {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        grid-template-rows: auto;
+        grid-template-areas: " . . large large large large large large . .";
+
+
+    }
+
+    .largeLayoutContainer {
+        grid-area: large;
+    }
+
+    .ian {
+        grid-area: Ian;
+    }
+
+    .faye {
+        grid-area: Faye;
+    }
+
+    .bera {
+        grid-area: Bera;
+    }
+
+    .xenon {
+        grid-area: Xenon;
+    }
+
+    .blueBox {
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .9));
+        background-color: blue;
+        border: 5px solid white;
+        height: 200px;
+        box-shadow: 10px 10px 6px 8px rgba(8, 8, 8, .5);
+        word-wrap: break-word;
+        display: flex;
+        align-items: center;
+        justify-items: stretch;
+        place-content: start space-evenly;
+        overflow: hidden;
+    }
+
+    .spacer {
+        height: 50px;
+        grid-area: spacer;
+    }
+}

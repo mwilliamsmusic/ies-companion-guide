@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+.button {
+    width:150px;
+    height: 60px;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    background-color: rgba(0,0,0,.0);
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: -webkit-grab; cursor: grab;
+    margin:5px;
+
+
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.3), 0 17px 50px 0 rgba(0,0,0,0.2);
+    color:blue;
+    background-color: whitesmoke;
+    background-image: linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.3));
+}

@@ -1,7 +1,9 @@
 import  React from 'react';
-
+import BeastiaryAPIMain from '../../API/BeastiaryAPI/BeastiaryAPIMain'
 const  beastDisplay = () => (
-  <div></div>
+  <div>
+    <BeastiaryAPIMain/>
+  </div>
 );
 
 export default beastDisplay;

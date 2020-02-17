@@ -18,9 +18,10 @@ const sideDrawer = (props) => {
         <div className={attachedStyles.join(' ')}>
             <nav>
                 <NavigationItems/>
-                <div className={styles.centerLogo}>
+                <div className={styles.spacer}></div>
+
                     <WimbusLogo500/>
-               </div>
+
             </nav>
         </div>
       </Fragment>

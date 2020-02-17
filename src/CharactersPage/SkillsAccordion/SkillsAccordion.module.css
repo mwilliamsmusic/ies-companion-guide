@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+accordian {
+    color: whitesmoke;
+    background: #00b3c8;
+}
+
+.button {
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    height: 40px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: -webkit-grab; cursor: grab;
+    font-size: 15px;
+
+
+
+}
+
+.bust {
+    height: 40%;
+    width: 40%;
+margin: auto;
+}
+
+.blueBox {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .9));
+    background-color: blue;
+    border: 5px solid white;
+margin: auto;
+
+    box-shadow: 10px 10px 6px 8px rgba(8, 8, 8, .5);
+    padding: 20px;
+
+
+
+}
+
+.spacer {
+    height: 50px;
+
+}
+
+.centerButtons {
+display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+}

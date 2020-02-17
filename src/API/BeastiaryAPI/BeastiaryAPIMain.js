@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import {connect} from "react-redux";
 import * as actionType  from '../../Store/actions';
-import EquipAPI from './EquipAPI';
+import BeastiaryAPI from './BeastiaryAPI';
 
-class EquipAPIMain extends Component {
+
+class BeastiaryAPIMain extends Component {
 
   container = React.createRef();
 
@@ -48,13 +49,14 @@ class EquipAPIMain extends Component {
             <div class="container">
               <ul>
                 <button onClick={()=> {this.props.oCoast(); this.handleButtonClick()}}>Ornery Coast</button>
-                <button onClick={()=> {this.props.kami(); this.handleButtonClick()}}>Kami</button>
-                <button onClick={()=> {this.props.magik(); this.handleButtonClick()}}>Magik</button>
+                <button onClick={()=> {this.props.haven(); this.handleButtonClick()}}>Haven</button>
+                <button onClick={()=> {this.props.bPeaks(); this.handleButtonClick()}}>Beaks Peaks</button>
+
               </ul>
             </div>
           )}
         </div>
-        <EquipAPI url={this.props.link} location ={this.props.loc}/>
+        <BeastiaryAPI url={this.props.link} location ={this.props.loc}/>
       </div>
     );
   }
@@ -62,17 +64,17 @@ class EquipAPIMain extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    loc : state.equip.location,
-    link: state.equip.link
+    loc : state.enemy.location,
+    link: state.enemy.link
   };
 };
 
 const mapDispatchToProps =(dispatch) => {
   return {
-    kami:() => dispatch({type:actionType.KAMI_EQUIP}),
-    magik:() => dispatch({type:actionType.MAGIK_EQUIP}),
-    oCoast:() => dispatch({type:actionType.ORNERY_COAST_EQUIP})
+    haven:() => dispatch({type:actionType.HAVEN_ENEMY}),
+    bPeaks:() => dispatch({type:actionType.BEAKS_PEAKS_ENEMY}),
+    oCoast:() => dispatch({type:actionType.ORNERY_COAST_ENEMY})
   }
-}
+};
 
-export default connect(mapStateToProps,mapDispatchToProps)(EquipAPIMain);
+export default connect(mapStateToProps,mapDispatchToProps)(BeastiaryAPIMain);

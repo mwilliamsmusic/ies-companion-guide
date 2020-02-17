@@ -14,20 +14,20 @@ const  itemReducer = (state = intialState, action) => {
       return {
         ...state,
         location: 'Kami',
-        link:'https://wimbusstudios.herokuapp.com/kami/item',
+        link:'https://wimbusstudios.herokuapp.com/items?itemLoc=Kami',
       };
 
     case actionType.ORNERY_COAST_ITEMS:
       return {
         ...state,
         location: 'Ornery Coast',
-        link: 'https://wimbusstudios.herokuapp.com/oc/item'
+        link: 'https://wimbusstudios.herokuapp.com/items?itemLoc=Ornery Coast'
       };
 
     case actionType.MAGIK_ITEMS:
       return {
         location:'Magik',
-        link: 'https://wimbusstudios.herokuapp.com/magik/item',
+        link: 'https://wimbusstudios.herokuapp.com/items?itemLoc=Magik'
       }
   }
       return state;

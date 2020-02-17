@@ -13,18 +13,18 @@
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
     border-color:  rgba(0,0,0,.5);
-    grid-column-gap: 3px;
+    grid-column-gap: 2px;
 
 }
 .b li {
-    background: #61dafb linear-gradient(to bottom, rgba(0, 0, 0, .05), rgba(255, 255, 255, .2));
+    background: #61dafb linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(255, 255, 255, .3));
     list-style: none;
-
-
-color: gold;
+    color: gold;
+    text-shadow: 2px 2px black;
 }
 .b li:nth-child(odd) {
     color:gold;
-    background: #ff005b linear-gradient(to bottom, rgba(0, 0, 0, .05), rgba(255, 255, 255, .2));
-
+    background: #ff005b linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(255, 255, 255, .3));
+    list-style: none;
+    text-shadow: 2px 2px black;
 }

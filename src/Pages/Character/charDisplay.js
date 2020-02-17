@@ -1,7 +1,9 @@
 import  React from 'react';
-
+import CharactersPage from '../../CharactersPage/CharactersPage';
 const  charDisplay = () => (
-  <div></div>
+  <div>
+    <CharactersPage/>
+  </div>
 );
 
 export default charDisplay;

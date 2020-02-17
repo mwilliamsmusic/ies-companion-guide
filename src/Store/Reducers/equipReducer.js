@@ -14,20 +14,20 @@ const  equipReducer = (state = intialState, action) => {
       return {
         ...state,
         location: 'Kami',
-        link:'https://wimbusstudios.herokuapp.com/kami/equip',
+        link:'https://wimbusstudios.herokuapp.com/equip?equipLoc=Kami'
       };
 
     case actionType.ORNERY_COAST_EQUIP:
       return {
         ...state,
         location: 'Ornery Coast',
-        link: 'https://wimbusstudios.herokuapp.com/oc/equip'
+        link: 'https://wimbusstudios.herokuapp.com/equip?equipLoc=Ornery Coast'
       };
 
     case actionType.MAGIK_EQUIP:
       return {
         location:'Magik',
-        link: 'https://wimbusstudios.herokuapp.com/magik/equip',
+        link: 'https://wimbusstudios.herokuapp.com/equip?equipLoc=Magik'
       }
   }
   return state;

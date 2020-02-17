@@ -7,3 +7,8 @@ export const MAGIK_ITEMS = 'MAGIK_ITEMS ';
 export const KAMI_EQUIP = 'KAMI_EQUIP';
 export const ORNERY_COAST_EQUIP = 'ORNERY_COAST_EQUIP';
 export const MAGIK_EQUIP = 'MAGIK_EQUIP ';
+
+// Enemy
+export const ORNERY_COAST_ENEMY = 'ORNERY_COAST_ENEMY';
+export const BEAKS_PEAKS_ENEMY = 'BEAKS_PEAKS_ENEMY';
+export const HAVEN_ENEMY = 'HAVEN_ENEMY';

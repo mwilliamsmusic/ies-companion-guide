@@ -9,16 +9,18 @@ import { createStore, combineReducers } from "redux";
 import { Provider} from 'react-redux';
 import itemReducer from './Store/Reducers/itemReducer';
 import equipReducer from './Store/Reducers/equipReducer';
+import enemyReducer from './Store/Reducers/enemyReducer';
 
 const rootReducer = combineReducers({
   item: itemReducer,
   equip: equipReducer,
+  enemy: enemyReducer,
 });
 
 const store = createStore(rootReducer);
 
 const app = (
-  <BrowserRouter>
+  <BrowserRouter basename={"/IESCompanionGuide"}>
     <App/>
   </BrowserRouter>
 );

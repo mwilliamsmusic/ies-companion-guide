@@ -1,9 +1,9 @@
 import React from 'react';
 import Axios from 'axios';
 import Loading from "../../UI/Loading/loading";
-import styles from "./ItemAPI.module.css";
+import styles from './BeastiaryAPI.module.css';
 
-class ItemAPI extends React.Component {
+class BeastiaryAPI extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,25 +29,27 @@ class ItemAPI extends React.Component {
 
     return(
       <div>
-         {this.props.location}
-        {loading ? <Loading/> : data.map(item => (
+    
+        {loading ? <Loading/> : data.map(enemy => (
 
           <div className={styles.font}>
             <div className={styles.b}>
 
-              <div className={styles.gridListContainer}>
+            <div className={styles.gridListContainer}>
 
-                <li >{item.itemName}</li>
-                <li>{item.itemChar}</li>
-                <li>{item.itemLoc}</li>
-                <li>{item.itemDesc}</li>
-              </div>
+              <li><img src= {enemy.enemyURL}></img></li>
+            <li >{enemy.enemyName}</li>
+            <li>{enemy.enemyLoc}</li>
+            <li>{enemy.enemyDesc}</li>
+            </div>
             </div>
           </div>
+
+
         ))}
       </div>
     )
   }
 }
 
-export default ItemAPI;
+export default BeastiaryAPI;

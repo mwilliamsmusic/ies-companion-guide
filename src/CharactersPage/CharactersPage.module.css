@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+.textIceland {
+    font-family: 'Iceland', cursive;
+    font-size: 1.5rem;
+}
+
+
+
+.textRO {
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+
+.image {
+font-size: .5rem;
+
+}
+
+.red {
+    color: red;
+}
+
